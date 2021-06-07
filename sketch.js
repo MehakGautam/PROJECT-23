@@ -88,10 +88,10 @@ function  keyPressed(){
 	// moving helicopter right left 
 	if(keyCode===LEFT_ARROW){
 		helicopterSprite.x=helicopterSprite.x-20;
-		Matter.Body.translate(packageBody,{x:-10});
+		Matter.Body.translate(packageBody,{x:-10,y:0});
 	}
 	if(keyCode===RIGHT_ARROW){
 		helicopterSprite.x=helicopterSprite.x+20;
-		Matter.Body.translate(packageBody,{x:+10});
+		Matter.Body.translate(packageBody,{x:+10,y:0});
 	}
 }
